@@ -1,0 +1,368 @@
+
+* {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  max-width: 1920px;
+  max-height: 1080px;
+  scroll-behavior: smooth;
+}
+
+body #nav {
+  height: 80px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  position: relative;
+}
+body #nav nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+}
+body #nav nav .logo {
+  padding-left: 54px;
+}
+body #nav nav .logo a {
+  text-decoration: none;
+}
+body #nav nav .logo a p {
+  font-size: 22px;
+  padding: 10px;
+  font-weight: bolder;
+  color: #2D2E32;
+  border-radius: 15px;
+  transition: 0.15s ease-in-out;
+}
+body #nav nav .logo a p:hover {
+  background: #147efb;
+  color: white;
+}
+body #nav nav .links {
+  padding-right: 40px;
+  list-style-type: none;
+  display: flex;
+}
+body #nav nav .links a {
+  text-decoration: none;
+}
+body #nav nav .links a li {
+  padding-right: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2D2E32;
+  transition: color 0.2s ease-in-out;
+}
+body #nav nav .links a li:hover {
+  color: #147efb;
+}
+body #home {
+  background: #f9f9f9;
+  margin: 0px;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #home .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70vw;
+  height: 75vh;
+}
+body #home .hero .hero-main {
+  height: 70%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #home .hero .hero-main .hero-main-text {
+  width: 60%;
+  height: 80%;
+  padding: 20px;
+}
+body #home .hero .hero-main .hero-main-text .hero-main-text-text h1 {
+  color: #2d2e32;
+  font-size: 3.5rem;
+}
+body #home .hero .hero-main .hero-main-text .hero-main-text-text p {
+  color: #767676;
+  font-size: 1.15rem;
+}
+body #home .hero .hero-main .hero-main-text .hero-main-text-links {
+  display: flex;
+}
+body #home .hero .hero-main .hero-main-text .hero-main-text-links a {
+  text-decoration: none;
+  padding: 0px;
+  margin-right: 10px;
+}
+body #home .hero .hero-main .hero-main-text .hero-main-text-links a img {
+  height: 40px;
+  width: 40px;
+  padding: 0px;
+  margin: 0px;
+}
+body #home .hero .hero-main .hero-main-image {
+  width: 32%;
+  height: 82%;
+  background: url(./me.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #2d2e32;
+  border-radius: 177px;
+  animation: borderAnimation 7s infinite;
+}
+@keyframes borderAnimation {
+  0% {
+    border-radius: 194px 111px 190px 133px;
+  }
+  33% {
+    border-radius: 288px 213px 256px 394px;
+  }
+  66% {
+    border-radius: 166px 199px 122px 292px;
+  }
+  100% {
+    border-radius: 194px 111px 190px 133px;
+  }
+}
+body #home .hero .hero-skills {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #home .hero .hero-skills .hero-skills-text {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #home .hero .hero-skills .hero-skills-text p {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #2d2e32;
+  font-weight: bold;
+  text-align: center;
+}
+body #home .hero .hero-skills .hero-skills-images {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: space-evenly;
+}
+body #home .hero .hero-skills .hero-skills-images img {
+  height: 70px;
+  width: 70px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+}
+body #aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+body #aboutme .aboutme-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  width: 1000px;
+}
+body #aboutme .aboutme-container .aboutme-container-image {
+  height: 60%;
+  border-radius: 40px;
+  width: 50%;
+  background: url(./aboutme.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body #aboutme .aboutme-container .aboutme-container-text {
+  width: 45%;
+}
+body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #147efb;
+  padding: 20px 0px 20px 0px;
+}
+body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line3 {
+  color: #767676;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+@media (max-width: 1111px) {
+  body #home .hero {
+    width: 90vw;
+  }
+}
+@media (max-width: 1024px) {
+  body #home .hero .hero-main .hero-main-text .hero-main-text-text h1 {
+    font-size: 40px;
+  }
+  body #home .hero .hero-main .hero-main-text .hero-main-text-text p {
+    font-size: 15px;
+  }
+  body #aboutme {
+    padding: 20px 0px 20px 0px;
+    height: auto;
+  }
+  body #aboutme .aboutme-container {
+    flex-direction: column;
+  }
+  body #aboutme .aboutme-container .aboutme-container-image {
+    height: 300px;
+  }
+  body #aboutme .aboutme-container .aboutme-container-text {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  body #home .hero .hero-main {
+    justify-content: space-around;
+    width: 100%;
+  }
+  body #home .hero .hero-main .hero-main-text {
+    width: 60%;
+  }
+  body #home .hero .hero-main .hero-main-text .hero-main-text-text h1 {
+    font-size: 30px;
+  }
+  body #home .hero .hero-main .hero-main-text .hero-main-text-text p {
+    font-size: 14px;
+  }
+  body #home .hero .hero-main .hero-main-image {
+    width: 35%;
+    height: 70%;
+  }
+  body #nav nav .logo a p {
+    font-size: 18px;
+  }
+  body #nav nav .links a li {
+    font-size: 15px;
+  }
+  body #aboutme {
+    padding: 20px 0px 20px 0px;
+    height: auto;
+  }
+  body #aboutme .aboutme-container {
+    flex-direction: column;
+  }
+  body #aboutme .aboutme-container .aboutme-container-image {
+    height: 300px;
+    width: 70%;
+  }
+  body #aboutme .aboutme-container .aboutme-container-text {
+    width: 70%;
+  }
+}
+@media (max-width: 525px) {
+  body #home {
+    height: auto;
+    padding: 30px;
+  }
+  body #home .hero {
+    width: 100vw;
+    height: auto;
+  }
+  body #home .hero .hero-main {
+    width: inherit;
+    flex-direction: column;
+  }
+  body #home .hero .hero-main .hero-main-text {
+    width: 80%;
+  }
+  body #home .hero .hero-main .hero-main-text .hero-main-text-text {
+    justify-content: center;
+    align-items: center;
+  }
+  body #home .hero .hero-main .hero-main-text .hero-main-text-text h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  body #home .hero .hero-main .hero-main-text .hero-main-text-text p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  body #home .hero .hero-main .hero-main-text .hero-main-text-links {
+    justify-content: center;
+    align-items: center;
+  }
+  body #home .hero .hero-main .hero-main-image {
+    width: 40%;
+    height: 200px;
+  }
+  body #home .hero .hero-skills {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  body #home .hero .hero-skills .hero-skills-text p {
+    font-size: 14px;
+  }
+  body #home .hero .hero-skills .hero-skills-images {
+    display: flex;
+    margin-left: 5px;
+  }
+  body #home .hero .hero-skills .hero-skills-images img {
+    height: 58px;
+    width: 58px;
+    margin: 2px;
+    border-radius: 30%;
+  }
+  body #nav nav .logo {
+    padding-left: 4px;
+  }
+  body #nav nav .logo a p {
+    font-size: 17px;
+  }
+  body #nav nav .links {
+    padding-right: 2px;
+  }
+  body #nav nav .links a {
+    padding: 0px;
+  }
+  body #nav nav .links a li {
+    font-size: 14px;
+    padding-right: 6px;
+  }
+  body #aboutme {
+    padding: 20px 0px 20px 0px;
+    height: auto;
+  }
+  body #aboutme .aboutme-container {
+    flex-direction: column;
+  }
+  body #aboutme .aboutme-container .aboutme-container-image {
+    height: 200px;
+    width: 280px;
+  }
+  body #aboutme .aboutme-container .aboutme-container-text {
+    width: 80%;
+  }
+  body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line3 {
+    line-height: 1.4;
+    font-size: 14px;
+  }
+  body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line2 {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=portfolio.css.map */
