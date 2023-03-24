@@ -5,7 +5,6 @@
   padding: 0px;
   box-sizing: border-box;
   max-width: 1920px;
-  max-height: 1080px;
   scroll-behavior: smooth;
 }
 
@@ -20,6 +19,12 @@ body #nav nav {
   align-items: center;
   justify-content: space-between;
   height: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.099);
 }
 body #nav nav .logo {
   padding-left: 54px;
@@ -194,7 +199,7 @@ body #aboutme .aboutme-container .aboutme-container-text {
   width: 45%;
 }
 body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line1 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   color: #147efb;
   padding: 20px 0px 20px 0px;
@@ -207,6 +212,239 @@ body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line3 {
   color: #767676;
   text-align: justify;
   line-height: 1.5;
+}
+body #projects {
+  background: #f9f9f9;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body #projects .projects-container {
+  margin-top: 50px;
+  height: 100%;
+  width: 72%;
+}
+body #projects .projects-container .projects-projects {
+  height: 400px;
+  margin: 50px 0px 50px 0px;
+  padding: 0px 5px 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+body #projects .projects-container .projects-projects .image {
+  height: 92%;
+  width: 50%;
+  background: cyan;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body #projects .projects-container .projects-projects .text {
+  height: 100%;
+  width: 50%;
+  border-radius: 10px;
+}
+body #projects .projects-container p {
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+  color: #147efb;
+}
+body #projects .projects-container h1 {
+  text-align: left;
+}
+body #projects .projects-container .chef {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body #projects .projects-container .chef .image {
+  background: url(./chef\ full\ page\ ss.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  transition: background-position 5s ease-in-out;
+}
+body #projects .projects-container .chef .image:hover {
+  background-position: bottom;
+}
+body #projects .projects-container .chef .text {
+  padding: 40px 40px 0px 40px;
+  text-align: center;
+}
+body #projects .projects-container .chef .text .project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+body #projects .projects-container .chef .text .project-links a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+body #projects .projects-container .chef .text .project-links a p {
+  color: #000;
+  font-size: 18px;
+}
+body #projects .projects-container .chef .text .project-links a i {
+  margin-left: 5px;
+}
+body #projects .projects-container .chef .text h1 {
+  color: #2d2e32;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+body #projects .projects-container .chef .text p {
+  color: #767676;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+body #projects .projects-container .chef .text button {
+  height: 40px;
+  width: 80px;
+  color: #2d2e32;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: text;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  background: #fff;
+}
+body #projects .projects-container .smokefree .image {
+  background: url(./smokefree\ full\ page\ ss.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  transition: background-position 5s ease-in-out;
+}
+body #projects .projects-container .smokefree .image:hover {
+  background-position: bottom;
+}
+body #projects .projects-container .smokefree .text {
+  padding: 40px 40px 0px 40px;
+  text-align: center;
+}
+body #projects .projects-container .smokefree .text .project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+body #projects .projects-container .smokefree .text .project-links a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+body #projects .projects-container .smokefree .text .project-links a p {
+  color: #000;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+body #projects .projects-container .smokefree .text .project-links a i {
+  margin-left: 5px;
+}
+body #projects .projects-container .smokefree .text h1 {
+  color: #2d2e32;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+body #projects .projects-container .smokefree .text p {
+  color: #767676;
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+body #projects .projects-container .smokefree .text button {
+  height: 40px;
+  width: 80px;
+  color: #2d2e32;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: text;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  background: #fff;
+}
+body #projects .projects-container .portfolio {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body #projects .projects-container .portfolio .image {
+  background: url(./portfolio\ full\ page\ ss.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  transition: background-position 5s ease-in-out;
+}
+body #projects .projects-container .portfolio .image:hover {
+  background-position: bottom;
+}
+body #projects .projects-container .portfolio .text {
+  padding: 40px 40px 0px 40px;
+  text-align: center;
+}
+body #projects .projects-container .portfolio .text .project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+body #projects .projects-container .portfolio .text .project-links a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+body #projects .projects-container .portfolio .text .project-links a p {
+  color: #000;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+body #projects .projects-container .portfolio .text .project-links a i {
+  margin-left: 5px;
+}
+body #projects .projects-container .portfolio .text h1 {
+  color: #2d2e32;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+body #projects .projects-container .portfolio .text p {
+  color: #767676;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+body #projects .projects-container .portfolio .text button {
+  height: 40px;
+  width: 80px;
+  color: #2d2e32;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: text;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  background: #fff;
 }
 
 @media (max-width: 1111px) {
@@ -233,6 +471,20 @@ body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line3 {
   }
   body #aboutme .aboutme-container .aboutme-container-text {
     width: 50%;
+  }
+  body #projects .projects-container .projects-projects {
+    flex-direction: column;
+    height: 800px;
+    padding-top: 40px;
+  }
+  body #projects .projects-container .projects-projects .text {
+    width: 80%;
+  }
+  body #projects .projects-container .projects-projects .image {
+    width: 80%;
+  }
+  body #projects .projects-container .smokefree {
+    padding-top: 0px;
   }
 }
 @media (max-width: 768px) {
@@ -272,6 +524,23 @@ body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line3 {
   }
   body #aboutme .aboutme-container .aboutme-container-text {
     width: 70%;
+  }
+  body #projects .projects-container {
+    width: 85%;
+  }
+  body #projects .projects-container .projects-projects {
+    flex-direction: column;
+    height: 800px;
+    padding: 20px 20px 0px 20px;
+  }
+  body #projects .projects-container .projects-projects .text {
+    width: 100%;
+  }
+  body #projects .projects-container .projects-projects .image {
+    width: 100%;
+  }
+  body #projects .projects-container .smokefree {
+    padding-top: 0px;
   }
 }
 @media (max-width: 525px) {
@@ -364,5 +633,68 @@ body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line3 {
   }
   body #aboutme .aboutme-container .aboutme-container-text #aboutme-p-line2 {
     font-size: 24px;
+  }
+  body #projects .projects-container {
+    width: 94%;
+  }
+  body #projects .projects-container .projects-projects {
+    flex-direction: column;
+    height: 1000px;
+  }
+  body #projects .projects-container .projects-projects .text {
+    width: 100%;
+  }
+  body #projects .projects-container .projects-projects .image {
+    width: 100%;
+    height: 100%;
+    transition: none;
+    background-size: contain;
+  }
+  body #projects .projects-container .projects-projects p {
+    margin: 0px;
+    text-align: justify;
+  }
+  body #projects .projects-container .smokefree {
+    padding-top: 0px;
+    height: 1000px;
+  }
+  body #projects .projects-container .smokefree .text {
+    height: 30%;
+    padding-top: 0px;
+  }
+  body #projects .projects-container .smokefree .image {
+    height: 48.4%;
+  }
+  body #projects .projects-container .chef {
+    height: 1100px;
+  }
+  body #projects .projects-container .chef .text {
+    height: 40%;
+  }
+  body #projects .projects-container .chef .text p {
+    text-align: justify;
+  }
+  body #projects .projects-container .chef .image {
+    height: 58%;
+  }
+  body #projects .projects-container .portfolio {
+    height: 1100px;
+  }
+  body #projects .projects-container .portfolio .text {
+    height: 50%;
+  }
+  body #projects .projects-container .portfolio .image {
+    background-size: cover;
+    height: 78%;
+    transition: background-position 1s ease-in-out;
+  }
+  body #projects .projects-container .portfolio .image:hover {
+    background-position: bottom;
+  }
+  body #projects .projects-container p {
+    margin-left: 30px;
+  }
+  body #projects .projects-container h1 {
+    margin-left: 30px;
   }
 }/*# sourceMappingURL=portfolio.css.map */

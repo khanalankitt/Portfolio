@@ -5,7 +5,7 @@
     padding:0px;
     box-sizing: border-box;
     max-width:1920px;
-    max-height:1080px;
+    // max-height:1080px;
     scroll-behavior: smooth;
 }
 @mixin center{
@@ -23,6 +23,13 @@ body{
             @include center;
             justify-content: space-between;
             height:inherit;
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            background-color: white;
+            box-shadow:0 0 10px rgba(0,0,0,.099);
+
             .logo{
                 padding-left:54px;
                 a{
@@ -171,6 +178,7 @@ body{
             }
         }
     }
+    //styling aboutme
     #aboutme{
         @include center;
         height:80vh;
@@ -193,7 +201,7 @@ body{
             .aboutme-container-text{
                 width:45%;   
                 #aboutme-p-line1{
-                    font-size: 20px;
+                    font-size: 30px;
                     font-weight: bold;
                     color:#147efb;
                     padding:20px 0px 20px 0px;
@@ -209,6 +217,233 @@ body{
                 }
 
                 
+            }
+        }
+    }
+    //styling projects
+    #projects{
+        background:#f9f9f9;
+        height:auto;
+        // width:100vw;
+        @include center;
+        flex-direction: column;
+        .projects-container{
+            margin-top: 50px;
+            height:100%;
+            width:72%;
+            .projects-projects{
+                height:400px;
+                margin:50px 0px 50px 0px;
+                padding:0px 5px 0px 15px;
+                @include center;
+                justify-content: space-around;
+                border-radius: 10px;
+                .image{
+                    height:92%;
+                    width:50%;
+                    background: cyan;
+                    border-radius: 10px;
+                    box-shadow:0 0 10px rgba(0,0,0,.1);
+                }
+                .text{
+                    height:100%;
+                    width:50%;
+                    border-radius: 10px;
+                }
+            }
+            p{
+                font-size: 30px;
+                text-align: left;
+                font-weight: bold;
+                color: #147efb;
+            }
+            h1{
+                text-align: left;
+            }
+            .chef{
+                box-shadow:0 0 10px rgba(0,0,0,.1);
+                .image{
+                    background: url(./chef\ full\ page\ ss.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: top;
+                    transition:background-position 5s ease-in-out;
+                    &:hover{
+                        background-position: bottom;
+                    }
+                }
+                .text{
+                    .project-links{
+                        @include center;
+                        justify-content: center;
+                        height:auto;
+                        width:auto;
+                        a{
+                            p{
+                                color: #000;
+                                font-size: 18px;
+                            }
+                            i{
+                                margin-left:5px;
+                            }
+                            display: flex;
+                            text-decoration: none;
+                            color:#000;
+                        }    
+                    }
+                    h1{
+                        color:#2d2e32;
+                        text-align: center;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                    p{
+                        color:#767676;
+                        font-size: 18px;
+                        line-height: 1.2;
+                        text-align:center;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: bolder;
+                    }
+                    padding:40px 40px 0px 40px;
+                    text-align: center;
+                    button{
+                        height:40px;
+                        width:80px;
+                        color:#2d2e32;
+                        border-radius:2px;
+                        border:none;
+                        outline:none;
+                        cursor:text;
+                        font-size:16px;
+                        font-weight: bold;
+                        box-shadow:0 0 10px rgba(0,0,0,.09);
+                        background: #fff;
+                    }
+                }
+            }
+            .smokefree{
+                .image{
+                    background: url(./smokefree\ full\ page\ ss.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: top;
+                    transition:background-position 5s ease-in-out;
+                    &:hover{
+                        background-position: bottom;
+                    }
+                }
+                .text{
+                    .project-links{
+                        @include center;
+                        justify-content: center;
+                        height:auto;
+                        width:auto;
+                        a{
+                            p{
+                                color: #000;
+                                font-size: 18px;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                            i{
+                                margin-left:5px;
+                            }
+                            display: flex;
+                            text-decoration: none;
+                            color:#000;
+                        }    
+                    }
+                    h1{
+                        color:#2d2e32;
+                        text-align: center;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight:bolder;
+                    }
+                    p{
+                        color:#767676;
+                        font-size: 18px;
+                        line-height: 1.2;
+                        font-family: 'Poppins', sans-serif;
+                        text-align:center;
+                        font-weight: bolder;
+                    }
+                    padding:40px 40px 0px 40px;
+                    text-align: center;
+                    button{
+                        height:40px;
+                        width:80px;
+                        color:#2d2e32;
+                        border-radius:2px;
+                        border:none;
+                        outline:none;
+                        cursor:text;
+                        font-size:16px;
+                        font-weight: bold;
+                        box-shadow:0 0 10px rgba(0,0,0,.09);
+                        background: #fff;
+                    }
+                }
+            }
+            .portfolio{
+                box-shadow:0 0 10px rgba(0,0,0,.1);
+                .image{
+                    background: url(./portfolio\ full\ page\ ss.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: top;
+                    transition:background-position 5s ease-in-out;
+                    &:hover{
+                        background-position: bottom;
+                    }
+                }
+                .text{
+                    .project-links{
+                        @include center;
+                        justify-content: center;
+                        height:auto;
+                        width:auto;
+                        a{
+                            p{
+                                color: #000;
+                                font-size: 18px;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                            i{
+                                margin-left:5px;
+                            }
+                            display: flex;
+                            text-decoration: none;
+                            color:#000;
+                        }    
+                    }
+                    h1{
+                        color:#2d2e32;
+                        font-family: 'Poppins', sans-serif;
+                        text-align: center;
+                    }
+                    p{
+                        color:#767676;
+                        font-size: 18px;
+                        line-height: 1.2;
+                        text-align:justify;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: bolder;
+                    }
+                    padding:40px 40px 0px 40px;
+                    text-align: center;
+                    button{
+                        height:40px;
+                        width:80px;
+                        color:#2d2e32;
+                        border-radius:2px;
+                        border:none;
+                        outline:none;
+                        cursor:text;
+                        font-size:16px;
+                        font-weight: bold;
+                        box-shadow:0 0 10px rgba(0,0,0,.09);
+                        background: #fff;
+                    }
+                }
             }
         }
     }
@@ -254,6 +489,24 @@ body{
                 }
                 .aboutme-container-text{
                     width:50%;
+                }
+            }
+        }
+        #projects{
+            .projects-container{
+                .projects-projects{
+                    flex-direction: column;
+                    height:800px;
+                    padding-top:40px;
+                    .text{
+                        width:80%;
+                    }
+                    .image{
+                        width:80%;
+                    }
+                }
+                .smokefree{
+                    padding-top:0px;
                 }
             }
         }
@@ -316,6 +569,26 @@ body{
                 }
             }
         }   
+        #projects{
+            .projects-container{
+                width:85%;
+                .projects-projects{
+                    flex-direction: column;
+                    height:800px;
+                    padding:20px 20px 0px 20px;
+                    .text{
+                        width:100%;
+                    }
+                    .image{
+                        width:100%;
+                    }
+                }
+                .smokefree{
+                    padding-top:0px;
+                }
+            }
+        }
+
     }
 }
 
@@ -419,5 +692,72 @@ body{
                 }       
             }
         }
+        #projects{
+            .projects-container{
+                width:94%;
+                .projects-projects{
+                    flex-direction: column;
+                    height:1000px;
+                    .text{
+                        width:100%;
+                    }
+                    .image{
+                        width:100%;
+                        height:100%;
+                        transition:none;
+                        background-size: contain;
+
+                    }
+                    p{
+                        margin:0px;
+                        text-align: justify;
+                    }
+                }
+                .smokefree{
+                    padding-top:0px;
+                    height:1000px;
+                    .text{
+                        height:30%;
+                        padding-top:0px;
+                    }
+                    .image{
+                        height:48.4%;
+                    }
+                }
+                .chef{
+                    height:1100px;
+                    .text{
+                        height:40%;
+                        p{
+                            text-align: justify;
+                        }
+                    }
+                    .image{
+                        height:58%;
+                    }
+                }
+                .portfolio{
+                    height:1100px;
+                    .text{
+                        height:50%;
+                    }
+                    .image{
+                        background-size: cover;
+                        height:78%;
+                        transition:background-position 1s ease-in-out;
+                        &:hover{
+                            background-position: bottom;
+                        }
+                    }
+                }
+                p{
+                    margin-left:30px;
+                }
+                h1{
+                    margin-left: 30px;
+                }
+            }
+        }
+    
     }
 }
