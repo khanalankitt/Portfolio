@@ -172,6 +172,78 @@ body #home .hero .hero-skills .hero-skills-images img {
   border-radius: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
 }
+body #contact {
+  height: 400px;
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #contact .contact-container {
+  padding: 30px;
+  width: 70%;
+  height: 100%;
+}
+body #contact .contact-container .text {
+  height: 50%;
+  padding: 50px 0px 0px 50px;
+}
+body #contact .contact-container .text p {
+  font-size: 30px;
+  color: #147efb;
+}
+body #contact .contact-container .img {
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+body #contact .contact-container .img .location {
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+body #contact .contact-container .img .location .icon {
+  width: 20%;
+}
+body #contact .contact-container .img .location .icon i {
+  font-size: 40px;
+}
+body #contact .contact-container .img .location .text {
+  width: 80%;
+  padding: 5px;
+  color: #2d2e32;
+  text-align: center;
+}
+body #contact .contact-container .img .location .text p {
+  font-size: 18px;
+  color: #2d2e32;
+  text-align: left;
+}
+body #contact .contact-container .img .mail {
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+body #contact .contact-container .img .mail .icon {
+  width: 20%;
+  margin-right: 15px;
+}
+body #contact .contact-container .img .mail .icon i {
+  font-size: 40px;
+}
+body #contact .contact-container .img .mail .text {
+  width: 80%;
+  padding: 5px;
+  color: #2d2e32;
+  text-align: center;
+}
+body #contact .contact-container .img .mail .text p {
+  font-size: 18px;
+  text-align: left;
+  color: #2d2e32;
+}
 body #aboutme {
   display: flex;
   justify-content: center;
@@ -550,6 +622,58 @@ body footer {
   }
   body #projects .projects-container .smokefree {
     padding-top: 0px;
+  }
+  body #contact {
+    height: 300px;
+  }
+  body #contact .contact-container {
+    width: 100%;
+    padding: 10px;
+  }
+  body #contact .contact-container .text {
+    padding: 30px 0px 0px 0px;
+    height: 30%;
+  }
+  body #contact .contact-container .text p, body #contact .contact-container .text h1 {
+    text-align: center;
+  }
+  body #contact .contact-container .text p {
+    font-size: 20px;
+  }
+  body #contact .contact-container .text h1 {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+  body #contact .contact-container .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  body #contact .contact-container .img .location {
+    margin-bottom: 20px;
+  }
+  body #contact .contact-container .img .location .icon i {
+    font-size: 30px;
+  }
+  body #contact .contact-container .img .location .text {
+    padding: 0px;
+  }
+  body #contact .contact-container .img .location .text p {
+    font-size: 16px;
+  }
+  body #contact .contact-container .img .mail {
+    margin-bottom: 20px;
+  }
+  body #contact .contact-container .img .mail .icon i {
+    font-size: 30px;
+  }
+  body #contact .contact-container .img .mail .text {
+    padding: 0px;
+  }
+  body #contact .contact-container .img .mail .text p {
+    font-size: 16px;
   }
 }
 @media (max-width: 525px) {
