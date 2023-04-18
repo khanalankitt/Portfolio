@@ -28,6 +28,7 @@ body #nav nav {
 }
 body #nav nav .logo {
   padding-left: 54px;
+  cursor: pointer;
 }
 body #nav nav .logo a {
   text-decoration: none;
