@@ -173,16 +173,19 @@ body #home .hero .hero-skills .hero-skills-images img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
 }
 body #contact {
-  height: 400px;
+  height: 780px;
   width: 98vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 body #contact .contact-container {
-  padding: 30px;
+  padding: 20px;
   width: 70%;
-  height: 100%;
+  height: 55%;
+  margin-bottom: -120px;
 }
 body #contact .contact-container .text {
   height: 50%;
@@ -208,6 +211,7 @@ body #contact .contact-container .img .location .icon {
 }
 body #contact .contact-container .img .location .icon i {
   font-size: 40px;
+  color: #147efb;
 }
 body #contact .contact-container .img .location .text {
   width: 80%;
@@ -232,6 +236,7 @@ body #contact .contact-container .img .mail .icon {
 }
 body #contact .contact-container .img .mail .icon i {
   font-size: 40px;
+  color: #147efb;
 }
 body #contact .contact-container .img .mail .text {
   width: 80%;
@@ -243,6 +248,18 @@ body #contact .contact-container .img .mail .text p {
   font-size: 18px;
   text-align: left;
   color: #2d2e32;
+}
+body #contact .map {
+  height: 55%;
+  width: 99.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #contact .map iframe {
+  height: 98%;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.099);
 }
 body #aboutme {
   display: flex;
@@ -624,10 +641,11 @@ body footer {
     padding-top: 0px;
   }
   body #contact {
-    height: 300px;
+    height: 600px;
   }
   body #contact .contact-container {
     width: 100%;
+    height: 55%;
     padding: 10px;
   }
   body #contact .contact-container .text {
@@ -674,6 +692,14 @@ body footer {
   }
   body #contact .contact-container .img .mail .text p {
     font-size: 16px;
+  }
+  body #contact .map {
+    height: 40%;
+    margin-top: -80px;
+  }
+  body #contact .map iframe {
+    height: 90%;
+    width: 90%;
   }
 }
 @media (max-width: 525px) {
